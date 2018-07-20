@@ -1,0 +1,108 @@
+header{
+    background-color: rgb(1, 174, 232);
+    position: sticky;
+    top: 0px;
+    height: 100px;
+    width: 100vw;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+h1, h2{
+    font-weight: bolder;
+}
+div > h2{
+    position: absolute;
+    left: 200px;
+    top: 20px;
+    font-size: 30px;
+}
+img{
+    float: left;
+    width: 60px;
+}
+footer{
+    background-color: rgb(0, 19, 60);
+    height: 75px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+.vid-container{
+    background-image: url('https://i1.wp.com/pilleblogi.com/wp-content/uploads/2015/05/gradient-abstract-hd-wallpaper-1920x1080-8091.jpg?fit=960%2C540');
+    margin: 0 auto;
+    height: 1200px;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+section video{
+    margin-top: 50px;
+    width: 500px;
+    height: 282px;
+    overflow: hidden;
+    border: 3px solid grey;
+}
+.diffvid{
+    width: 452px;
+    height: 283px;
+    margin: 50px 25px 0 25px;
+}
+span + div{
+    margin: -12px auto;
+    width: 110px;
+}
+.secret{
+    color: rgb(0, 12, 50);
+}
+.secret:hover{
+    color: yellow;
+}
+#randomVideoOff{
+    visibility: hidden;
+}
+#randomVideoOn{
+    visibility: visible;
+}
+.hidden-box{
+    position: fixed;
+    display: block;
+    top: 30%;
+    left: 25%;
+    margin: 0 auto;
+    background: rgb(6, 71, 140);
+    height: 400px;
+    width: 600px;
+    border: 3px solid grey;
+    border-radius: 3px;
+}
+.ranVid{
+    margin-top: 0;
+    position: relative;
+    top: 70px;
+    left: 50px;
+}
+.close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.info{
+    float: right;
+}
+#infoOff{
+    visibility: hidden;
+}
+#infoOn{
+    visibility: visible;
+}
+article{
+    padding: 30px;
+}
+ul li {
+    font-size: 20px;
+}
+article > h2 {
+    font-size: 40px;
+}

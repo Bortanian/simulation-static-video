@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href="reset.css">
+    <link rel='stylesheet' href="main.css">
+    <title>Static Page Sim One</title>
+</head>
+
+<body>
+    <header>
+        <img src="https://image.flaticon.com/icons/svg/30/30701.svg" alt="">
+        <h1>The Web's Best Code Tutorials</h1>
+        <button class='info' onclick='infoOn()'>Info</button>
+    </header>
+    <section>
+        <section class="vid-container">
+            <div>
+                <video id='videoElement'>
+                    <source src="./assets/vid1.mp4" type="video/mp4">
+                </video>
+                <br/>
+            </div>
+            <div>
+                <video id='videoElement2'>
+                    <source src="./assets/vid2.mp4" type="video/mp4">
+                </video>
+                <br/>
+            </div>
+            <div>
+                <video class='video diffvid' id='videoElement3'>
+                    <source src="./assets/vid3.mp4" type="video/mp4">
+                </video>
+                <br/>
+            </div>
+            <div>
+                <video id='videoElement4'>
+                    <source src="./assets/vid4.mp4" type="video/mp4">
+                </video>
+                <br/>
+            </div>
+            <div>
+                <video id='videoElement5'>
+                    <source src="./assets/vid2.mp4" type="video/mp4">
+                </video>
+                <br/>
+            </div>
+            <div>
+                <video id='videoElement6'>
+                    <source src="./assets/vid1.mp4" type="video/mp4">
+                </video>
+                <br/>
+            </div>
+        </section>
+        <div class='hidden-box' id='infoOff'>
+            <article>
+                <button onclick='infoOff()' class='close'>Close</button>
+                <h2>Look at what we got</h2>
+                <ul>
+                    <li>We Gottem all</li>
+                    <li>Look at these vids</li>
+                    <li>They'll blow your socks off</li>
+                    <li>EZ Clap</li>
+                </ul>
+            </article>
+        </div>
+        <div class='hidden-box' id='randomVideoOff'>
+            <h2>Random Video</h2>
+            <button onclick="randomVideoOff()" class='close'>Close</button>
+            <video class='ranVid' id='videoElement7'>
+                <source src='./assets/kittens-puppies.mp4' type='video/mp4'>
+            </video>
+        </div>
+    </section>
+    <footer>
+        <span class='secret'>Secret... shhhhhh</span>
+        <div class='random'>
+            <button onclick="randomVideoOn()">Random Video</button>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function randomVideoOn() {
+            document.getElementById('randomVideoOff').id = 'randomVideoOn'
+        }
+        function randomVideoOff() {
+            document.getElementById('randomVideoOn').id = 'randomVideoOff'
+        }
+        function infoOn() {
+            document.getElementById('infoOff').id = 'infoOn'
+        }
+        function infoOff() {
+            document.getElementById('infoOn').id = 'infoOff'
+        }
+        (function (window) {
+            function setupVideo() {
+                var v = document.getElementById('videoElement');
+                v.addEventListener('mouseover', function () { this.controls = true; }, false);
+                v.addEventListener('mouseout', function () { this.controls = false; }, false);
+                var vTwo = document.getElementById('videoElement2');
+                vTwo.addEventListener('mouseover', function () { this.controls = true; }, false);
+                vTwo.addEventListener('mouseout', function () { this.controls = false; }, false);
+                var vThree = document.getElementById('videoElement3');
+                vThree.addEventListener('mouseover', function () { this.controls = true; }, false);
+                vThree.addEventListener('mouseout', function () { this.controls = false; }, false);
+                var vFour = document.getElementById('videoElement4');
+                vFour.addEventListener('mouseover', function () { this.controls = true; }, false);
+                vFour.addEventListener('mouseout', function () { this.controls = false; }, false);
+                var vFive = document.getElementById('videoElement5');
+                vFive.addEventListener('mouseover', function () { this.controls = true; }, false);
+                vFive.addEventListener('mouseout', function () { this.controls = false; }, false);
+                var vSix = document.getElementById('videoElement6');
+                vSix.addEventListener('mouseover', function () { this.controls = true; }, false);
+                vSix.addEventListener('mouseout', function () { this.controls = false; }, false);
+                var vSeven = document.getElementById('videoElement7');
+                vSeven.addEventListener('mouseover', function () { this.controls = true; }, false);
+                vSeven.addEventListener('mouseout', function () { this.controls = false; }, false);
+            }
+
+            window.addEventListener('load', setupVideo, false);
+        })(window);
+
+    </script>
+</body>
+
+</html>
